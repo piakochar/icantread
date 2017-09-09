@@ -1,0 +1,8 @@
+MANIFEST.in
+icantread/__init__.py
+icantread/icantread.py
+icantread.egg-info/PKG-INFO
+icantread.egg-info/SOURCES.txt
+icantread.egg-info/dependency_links.txt
+icantread.egg-info/requires.txt
+icantread.egg-info/top_level.txt
