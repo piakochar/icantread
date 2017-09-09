@@ -15,4 +15,4 @@ def render_home():
 
 @app.route('/', methods=['POST'])
 def make_reading_fun():
-    return 'sup'
+    return render_template('fun_reading.html')
