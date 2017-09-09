@@ -1,31 +1,32 @@
 <!doctype html>
-<title>Picker</title>
-<div class=page>
-	<h1>Pick a Format</h1>
-  <div class="tab">
-    <button class="tablinks" onclick="openCity(event, 'London')">London</button>
-    <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
-    <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+<head>
+  <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+  <title>Picker</title>
+  <div class=page>
+    <h1>Pick a Format</h1>
+    <div class="tab">
+      <button class="tablinks" onclick="switchTab(event, 'Giphy')" >Giphy</button>
+      <button class="tablinks" onclick="switchTab(event, 'Facebook')">Facebook</button>
+      <button class="tablinks" onclick="switchTab(event, 'Twitter')">Twitter</button>
+    </div>
+
+    <div id="Giphy" class="tabcontent">
+      <h3>Giphy</h3>
+      <p>Is the best.</p>
+    </div>
+
+    <div id="Facebook" class="tabcontent">
+      <h3>Facebook</h3>
+      <p>Isn't the best.</p> 
+    </div>
+
+    <div id="Twitter" class="tabcontent">
+      <h3>Twitter</h3>
+      <p>Is pretty cool.</p>
+    </div>
+
+    <script src="../static/tabs.js"></script>
   </div>
-
-<div id="London" class="tabcontent">
-  <h3>London</h3>
-  <p>London is the capital city of England.</p>
-</div>
-
-<div id="Paris" class="tabcontent">
-  <h3>Paris</h3>
-  <p>Paris is the capital of France.</p> 
-</div>
-
-<div id="Tokyo" class="tabcontent">
-  <h3>Tokyo</h3>
-  <p>Tokyo is the capital of Japan.</p>
-</div>
-
-  <form action="">
-    <input type="radio" name="format" value="male"> Male<br>
-    <input type="radio" name="format" value="female"> Female<br>
-    <input type="radio" name="format" value="other"> Other
-  </form>
-</div>
+</body>
